@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/x3"
+    android:layout_marginRight="@dimen/x3"
+    android:background="@drawable/video_detail_content_normal"
+    android:focusable="true"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_cid_label"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:ellipsize="end"
+        android:padding="@dimen/x5"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextNormal"
+        tools:text="@string/app_name"
+        android:textSize="@dimen/text_size_bigger"/>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vodbyte.freetv">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".app.FreeTVApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="channel"
+            android:value="freetv" />
+
+        <activity
+            android:name=".contract.ProtocolActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".mvp.view.activity.search.SearchNewActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppSearchTheme" />
+
+        <activity
+            android:name=".contract.collect.VideoCollectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".mvp.view.activity.history.VideoHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".contract.QrCodeActivity"
+            android:theme="@style/TransparentActivity" />
+        <activity
+            android:name=".mvp.view.activity.personal.SettingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".mvp.view.activity.condition.ConditionActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".mvp.view.activity.detail.VideoDetailActivity"
+            android:screenOrientation="landscape" />
+
+<!--        <activity-->
+<!--            android:name=".mvp.view.activity.detail.FullScreenPlayActivity"-->
+<!--            android:launchMode="singleTask"-->
+<!--            android:screenOrientation="landscape"-->
+<!--            android:theme="@style/LauncherTheme">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <activity
+            android:name=".mvp.view.activity.live.IjkTVLiveActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".mvp.view.activity.detail.FullScreenPlayActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".mvp.view.activity.home.LaunchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".mvp.view.activity.home.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".mvp.view.activity.home.PermissionActivity"
+            android:screenOrientation="landscape" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

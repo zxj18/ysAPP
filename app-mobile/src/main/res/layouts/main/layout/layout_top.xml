@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topLayoutHeight"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="5dp"
+    android:id="@+id/root_layout_top"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/iv_right_layout_top"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:visibility="invisible"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_back_layout_top"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:padding="12dp"
+        android:clickable="true"
+        android:src="@drawable/ic_title_red_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_title_layout_top"
+        android:layout_width="0dp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        tools:text="@string/app_name"
+        android:textColor="@color/colorBluePrimary"
+        android:textSize="@dimen/text_size_title"
+        app:layout_constraintBottom_toBottomOf="@id/iv_back_layout_top"
+        app:layout_constraintEnd_toStartOf="@id/iv_right_layout_top"
+        app:layout_constraintStart_toEndOf="@id/iv_back_layout_top"
+        app:layout_constraintTop_toTopOf="@id/iv_back_layout_top" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

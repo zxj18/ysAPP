@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_normal">15sp</dimen>
+    <dimen name="text_size_bigger">18sp</dimen>
+    <dimen name="text_size_title">22sp</dimen>
+    <dimen name="text_size_small">13sp</dimen>
+    <dimen name="text_size_smaller">11sp</dimen>
+    <dimen name="video_card_corner">8dp</dimen>
+    <dimen name="type_corner">@dimen/x2</dimen>
+    <dimen name="video_item_width">@dimen/x80</dimen>
+    <dimen name="video_detail_margin">@dimen/x24</dimen>
+    <dimen name="video_detail_content_vertical_margin">@dimen/x4</dimen>
+    <dimen name="vip_pay_qrcode_size">@dimen/x120</dimen>
+    <dimen name="controller_text_size">16sp</dimen>
+    <dimen name="controller_height">46dp</dimen>
+    <dimen name="controller_icon_padding">12dp</dimen>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.vodbyte.freetv.widget.videoview.IjkVideoView
+        android:id="@+id/player_video_view"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/qrcode_view"
+        android:layout_margin="@dimen/x45"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/tv_right_layout"
+        android:layout_width="@dimen/x150"
+        android:layout_height="match_parent"
+        android:background="@drawable/dkplayer_shape_standard_controller_top_bg"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tv_right_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

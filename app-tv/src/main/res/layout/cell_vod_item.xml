@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x140"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/video_item_root"
+        style="@style/video_item_card_root"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <ImageView
+            android:id="@+id/video_item_iv_image"
+            style="@style/video_item_card_image" />
+
+        <TextView
+            android:id="@+id/tv_score_cell_vod_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black_transparent_55"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_alignParentEnd="true"
+            android:text="9.4分"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_smaller" />
+
+        <TextView
+            android:id="@+id/tv_recentWords_cell_vod_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_transparent_55"
+            android:gravity="end"
+            android:paddingEnd="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_smaller"
+            android:layout_marginBottom="-5dp"
+            android:layout_above="@+id/video_item_tv_title"
+            android:text="96话" />
+
+        <TextView
+            android:id="@+id/video_item_tv_title"
+            style="@style/video_item_card_text" />
+
+        <ImageView
+            android:id="@+id/video_item_iv_icon"
+            style="@style/video_item_card_play_icon" />
+    </RelativeLayout>
+</RelativeLayout>

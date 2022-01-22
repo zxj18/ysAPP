@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.vodbyte.freetv.widget.videoview.IjkVideoView
+        android:id="@+id/player_video_view"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/tv_live_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#BB000000"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/x24">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tv_live_recycler_view_title"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tv_live_recycler_view_sub_title"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_decode_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#BB000000"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/x24">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tv_live_decode_recycler_view"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

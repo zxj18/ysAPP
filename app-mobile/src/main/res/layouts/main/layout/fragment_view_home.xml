@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlAccentColor="@color/colorBluePrimary"
+    android:id="@+id/refreshLayout_fragment_home"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <com.vodbyte.movie.widget.ListenOffsetYNestedScrollView
+            android:id="@+id/scrollView_fragment_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/ll_scroll_inner_fragment_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner_fragment_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:delay_time="3000"
+                    app:indicator_drawable_selected="@mipmap/point_0"
+                    app:indicator_drawable_unselected="@mipmap/point_1"
+                    app:indicator_height="8dp"
+                    app:indicator_width="8dp"
+                    app:title_height="30dp"
+                    app:title_textsize="@dimen/text_size_small">
+                </com.youth.banner.Banner>
+
+                <LinearLayout
+                    android:id="@+id/ll_cid_header_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_girl_fragment_home"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:orientation="vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@mipmap/girl_big"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/girl"
+                            android:textSize="@dimen/text_size_normal"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/colorGrey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_collect_fragment_home"
+                        android:layout_width="0dp"
+                        android:paddingBottom="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="8dp"
+                        android:orientation="vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@mipmap/collect_big"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/collect_big"
+                            android:textSize="@dimen/text_size_normal"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/colorGrey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_top_fragment_home"
+                        android:layout_width="0dp"
+                        android:paddingBottom="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="8dp"
+                        android:orientation="vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@mipmap/top_big"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/top"
+                            android:layout_marginTop="3dp"
+                            android:textSize="@dimen/text_size_normal"
+                            android:textColor="@color/colorGrey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_qrcode_fragment_home"
+                        android:layout_width="0dp"
+                        android:paddingBottom="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="8dp"
+                        android:orientation="vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@mipmap/qrcode_big"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/qrcode"
+                            android:layout_marginTop="3dp"
+                            android:textSize="@dimen/text_size_normal"
+                            android:textColor="@color/colorGrey" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_publicity_header_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:visibility="invisible"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/affiche" />
+
+                    <com.vodbyte.movie.widget.MarqueeTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/marqueeTv" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.vodbyte.movie.widget.ListenOffsetYNestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

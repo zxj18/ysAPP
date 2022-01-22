@@ -1,0 +1,4 @@
+apksigner sign  --ks vodbyte.jks  --ks-key-alias vodbyte  --ks-pass pass:778899..  --key-pass pass:778899..  --out ./22.apk  ./11.apk
+
+// 验证签名
+apksigner verify -v my.apk

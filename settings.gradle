@@ -1,0 +1,12 @@
+rootProject.name = "android_movie"
+include ':app-mobile'
+include ':app-tv'
+include ':easy_rv_adapter'
+include ':dkplayer-java'
+include ':dkplayer-ui'
+include 'dkplayer-players:ijk'
+include 'dkplayer-players:exo'
+include ':comment_view'
+include ':library-share'
+include ':ecloadinglib'
+include ':dkplayer-videocache'

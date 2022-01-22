@@ -1,0 +1,8 @@
+.idea/
+.gradle/
+app/build/
+build/
+easy_rv_adapter/build
+app/proguardMapping.txt
+outputs/
+app-mobile/proguardMapping.txt

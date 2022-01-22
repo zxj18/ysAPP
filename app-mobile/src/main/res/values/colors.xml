@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorBluePrimary</color>
+    <color name="colorPrimaryDark">@color/colorBluePrimary</color>
+    <color name="colorAccent">@color/colorBluePrimary</color>
+    <color name="baseBackground">#F5F5F5</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorYellow">#f3bd7e</color>
+    <color name="colorBluePrimary">#478CF5</color>
+    <color name="divider_color">#dadcdd</color>
+    <color name="colorDarkGreen">#7BC730</color>
+    <color name="colorLightGreen">#00CEBB</color>
+    <color name="colorOrange">#FFA742 </color>
+    <color name="colorBlue">#5DBDFF</color>
+    <color name="colorPurple">#A1A8FF</color>
+    <color name="colorPink">#ff3399</color>
+    <color name="colorSky">#00bbff</color>
+    <color name="colorLightGrey">#979797</color>
+    <color name="colorGolden">#f6c90d</color>
+    <color name="colorCopper">#a7734b</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#787878</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_color">#e2575757</color>
+    <color name="bg_TopLayout">#eeeeff</color>
+    <color name="bg_rank_1">#fc7365</color>
+    <color name="bg_rank_2">#ff9f71</color>
+    <color name="bg_rank_3">#ffc477</color>
+    <color name="bg_rank_outer">#f5f5f5</color>
+    <color name="black_transparent_55">#14000000</color>
+    <color name="black_transparent_150">#96000000</color>
+    <color name="red_transparent_199">#c7f36653</color>
+    <color name="black_transparent_199">#c7000000</color>
+    <color name="white_transparent">#d4ffffff</color>
+
+    <color name="bg_support_text_red">#FC6352</color>
+    <color name="bg_support_red">#FEE0DD</color>
+    <color name="bg_support_text_green">#0AE1B5</color>
+    <color name="bg_support_green">#CCF9F0</color>
+    <color name="bg_support_text_orange">#FF9116</color>
+    <color name="bg_support_orange">#FDF3D5</color>
+    <color name="song_title">#333333</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="frament_tab_color">#f8f8f8</color>
+    <color name="translucent_black">#70000000</color>
+    <color name="translucent_white">#40FFFFFF</color>
+    <color name="translucent_gray">#88aaaaaa</color>
+
+    <!--文字图片查看-->
+    <color name="image_pager_title_color">#FF3A3B40</color>
+    <color name="image_pager_bg_color">#020202</color>
+    <color name="image_pager_text_bg_color">#FF3B4151</color>
+</resources>

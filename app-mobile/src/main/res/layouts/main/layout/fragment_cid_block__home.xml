@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlAccentColor="@color/colorBluePrimary"
+    android:id="@+id/refreshLayout_fragment_home"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+            <com.vodbyte.movie.widget.ListenOffsetYNestedScrollView
+                android:id="@+id/scrollView_fragment_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_scroll_inner_fragment_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner_fragment_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:delay_time="3000"
+                        app:indicator_drawable_selected="@mipmap/point_0"
+                        app:indicator_drawable_unselected="@mipmap/point_1"
+                        app:indicator_height="8dp"
+                        app:indicator_width="8dp"
+                        app:title_height="30dp"
+                        app:title_textsize="@dimen/text_size_small">
+                    </com.youth.banner.Banner>
+
+                </LinearLayout>
+
+            </com.vodbyte.movie.widget.ListenOffsetYNestedScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        <com.vodbyte.movie.widget.loading.SpinnerLoading-->
+<!--            android:id="@+id/loading_view"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:visibility="visible"-->
+<!--            app:circle_color="@color/colorBluePrimary"-->
+<!--            app:circle_color_move="@color/colorBluePrimary"-->
+<!--            android:layout_height="wrap_content" />-->
+
+    </FrameLayout>
+
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

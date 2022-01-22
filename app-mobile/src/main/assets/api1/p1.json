@@ -1,0 +1,45 @@
+{
+  "comments": [
+    {
+      "id": 18,
+      "fid": 1593699394031,
+      "posterName": "Rust",
+      "comment": "就这？不会吧。不会吧？",
+      "date": 1593699394031,
+      "prizes": 0,
+      "pid": 0,
+      "replies": [
+        {
+          "id": 1,
+          "kid": 1593699394031,
+          "replierName": "Java",
+          "reply": "没错，就这……",
+          "date": 1593742416885,
+          "prizes": 0,
+          "pid": 0
+        },
+        {
+          "id": 2,
+          "kid": 1593699394031,
+          "replierName": "Rust",
+          "reply": "我看过你写的文章，太棒了",
+          "date": 1593742512674,
+          "prizes": 0,
+          "pid": 1
+        }
+      ],
+      "currentPage": 1,
+      "totalPages": 2,
+      "totalDataSize": 4,
+      "pageSize": 2,
+      "nextPage": 2,
+      "prefPage": 0
+    }
+  ],
+  "currentPage": 1,
+  "totalPages": 3,
+  "totalDataSize": 10,
+  "pageSize": 4,
+  "nextPage": 2,
+  "prefPage": 0
+}

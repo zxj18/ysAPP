@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_size_title" />
+
+            <TextView
+                android:id="@+id/tv_score_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBaseline="@id/tv_title_view"
+                android:layout_toEndOf="@id/tv_title_view"
+                android:textSize="@dimen/text_size_bigger" />
+
+            <TextView
+                android:id="@+id/tv_class_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_below="@id/tv_title_view"
+                android:textSize="@dimen/text_size_normal" />
+
+            <com.vodbyte.movie.widget.foldtext.SpannableFoldTextView
+                android:id="@+id/tv_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/tv_class_view"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_color"
+                android:text="@string/app_name"
+                app:showMaxLine="2"
+                app:showTipAfterExpand="true"
+                app:tipClickable="true"
+                app:tipColor="@color/colorPrimary"
+                app:tipGravity="0" />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:columnCount="4">
+
+            <Button
+                android:id="@+id/btn_feedback"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:backgroundTint="@color/baseBackground"
+                android:textColor="@color/text_color"
+                android:drawableTop="@mipmap/icon_svg_feedback"
+                android:text="@string/feedback"
+                android:drawablePadding="5dp"
+                style="?android:attr/borderlessButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:backgroundTint="@color/baseBackground"
+                android:textColor="@color/text_color"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/mark_star_70"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/mark_star" />
+
+            <Button
+                android:id="@+id/btn_collect"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:backgroundTint="@color/baseBackground"
+                android:textColor="@color/text_color"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/icon_star_70"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/collect" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:backgroundTint="@color/baseBackground"
+                android:textColor="@color/text_color"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/icon_share_70"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/share" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
